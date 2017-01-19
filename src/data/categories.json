@@ -1,0 +1,24 @@
+{
+  "insurance": {
+    "employer": {
+      "name": "Employer",
+      "have": "have employer-sponsored insurance",
+      "with": "with employer-sponsored insurance"
+    },
+    "non-group": {
+      "name": "Non-group",
+      "have": "have non-group insurance",
+      "with": "with non-group insurance"
+    },
+    "medicaid": {
+      "name": "Medicaid",
+      "have": "have Medicaid",
+      "with": "with Medicaid"
+    },
+    "uninsured": {
+      "name": "Uninsured",
+      "have": "are uninsured",
+      "with": "without insurance"
+    }
+  }
+}
