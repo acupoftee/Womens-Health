@@ -13,13 +13,13 @@ export default class Map extends Component {
     super(props);
   }
 
-  componentMounted() {
+  componentDidMount() {
     if (this.props.fetched) {
       this.drawMap();
     }
   }
 
-  componentUpdated() {
+  componentDidUpdate() {
     if (this.props.fetched) {
       this.drawMap();
     }
