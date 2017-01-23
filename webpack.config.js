@@ -14,6 +14,10 @@ module.exports = {
       {
         test: /\.jsx?$/,
         loader: "babel-loader",
+        query:
+        {
+          presets:['react']
+        },
         include: [
           path.resolve(__dirname, "src")
         ],
@@ -38,7 +42,7 @@ module.exports = {
   },
   plugins: [
     new ExtractTextPlugin("style.css", {
-      allChunks: true
+        allChunks: true
     })
   ]
 };
