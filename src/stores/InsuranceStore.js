@@ -5,7 +5,7 @@ import Dispatcher from "../setup.js";
 import { fetch } from "../actions/InsuranceActions.js";
 
 let _data = {
-  data: null
+  data: null,
   activeState: "AL",
   activeInsurance: "medicaid",
   colros: colors[colors.mapping.medicaid],

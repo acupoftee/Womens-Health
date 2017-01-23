@@ -1,6 +1,6 @@
 "use strict";
 
-import "../../styles/map.sass";
+import "../../sass/map.sass";
 import React, { Component } from "react";
 import $ from "jquery";
 import d3 from "d3";

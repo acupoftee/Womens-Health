@@ -1,4 +1,5 @@
 import "./sass/main.sass";
+import React from "react";
 import ReactDOM from "react-dom";
 import Router, { Route, DefaultRoute } from "react-router";
 import App from "./components/App.jsx";

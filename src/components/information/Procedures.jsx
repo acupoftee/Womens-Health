@@ -7,4 +7,3 @@ export default class Procedures extends Component {
     return (<div><h2>Procedures</h2></div>);
     };
   }
-}

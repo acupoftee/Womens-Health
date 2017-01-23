@@ -1,4 +1,4 @@
-import insurance from "..data/insurance-breakdown.csv";
+import insurance from "../data/insurance-breakdowns.csv";
 import Dispatcher from "../setup.js";
 import Actions from "./Actions.js";
 

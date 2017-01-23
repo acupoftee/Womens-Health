@@ -2,7 +2,7 @@
   "name": "womens-health",
   "version": "1.0.0",
   "description": "map of women's health insurance coverage in the US",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -43,6 +43,7 @@
   },
   "devDependencies": {
     "autoprefixer-loader": "^3.2.0",
+    "babel-preset-es2015": "^6.22.0",
     "css-loader": "^0.26.1",
     "gulp": "^3.9.1",
     "jsx-loader": "^0.13.2",

@@ -2,7 +2,7 @@
 
 import React, { Component } from "react";
 import { RouteHandler } from "react-router";
-import PageHandler from "./PageHandler.jsx";
+import PageHeader from "./PageHeader.jsx";
 import Map from "./map/Map.jsx";
 import Info from "./information/Info.jsx";
 import colors from "../data/colors.js";

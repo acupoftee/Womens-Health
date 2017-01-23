@@ -4,7 +4,7 @@ import React, { Component } from "react";
 import Highcharts from "react-highcharts";
 import _ from "underscore";
 import InlineSelect from "../InlineSelect.jsx";
-import Legend from "../Legend.jsx";
+import Legend from "./Legend.jsx";
 import stateNames from "../../data/state-names.json";
 import categories from "../../data/categories.json";
 import Dispatcher from "../../setup.js";
@@ -20,24 +20,24 @@ let getBarChartColor = (insurance, activeInsurance) => {
 let getBarChartData = (data, state, insurance) => {
   let stateData = _.findWhere(data, {State: state});
   return [{
-    name: categories.insurance.employer.name;
-    color: getBarChartColor("employer", insurance);
-    y: +stateData.employer;
+    name: categories.insurance.employer.name,
+    color: getBarChartColor("employer", insurance),
+    y: +stateData.employer
   },
   {
-    name: categories.insurance["non-group"].name;
-    color: getBarChartColor("non-group", insurance);
-    y: +stateData["non-group"];
+    name: categories.insurance["non-group"].name,
+    color: getBarChartColor("non-group", insurance),
+    y: +stateData["non-group"]
   },
   {
-    name: categories.insurance.medicaid.name;
-    color: getBarChartColor("medicaid", insurance);
-    y: +stateData.medicaid;
+    name: categories.insurance.medicaid.name,
+    color: getBarChartColor("medicaid", insurance),
+    y: +stateData.medicaid
   },
   {
-    name: categories.insurance.uninsured.name;
-    color: getBarChartColor("uninsured", insurance);
-    y: +stateData.uninsured;
+    name: categories.insurance.uninsured.name,
+    color: getBarChartColor("uninsured", insurance),
+    y: +stateData.uninsured
   }];
 };
 
@@ -75,7 +75,7 @@ let getChartConfig = (data, state, insurance) => {
       }
     },
     series: [{
-      data: getBarChartData(data, state, insurance).
+      data: getBarChartData(data, state, insurance),
       showInLegend: false
     }],
     tooltip: {
@@ -104,7 +104,7 @@ export default class Insurance extends Component {
   render() {
     let chart;
     if (this.props.fetched) {
-      chart <Highcharts config={getChartConfig(this.props.data, this.props.activeState, this.props.activeInsurance)} />;
+      chart = <Highcharts config={getChartConfig(this.props.data, this.props.activeState, this.props.activeInsurance)} />;
     }
 
     return (

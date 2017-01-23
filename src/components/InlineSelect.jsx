@@ -3,13 +3,13 @@
 import React, { Component } from "react";
 import $ from "jquery";
 import classNames from "classnames";
-import categories from "../data/categories.js";
+import categories from "../data/categories.json";
 
 export default class InlineSelect extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      active: false;
+      active: false
     };
   }
 
