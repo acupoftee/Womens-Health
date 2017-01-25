@@ -78,7 +78,7 @@
 	  _reactRouter.Route,
 	  { name: "app", path: "/", handler: _App2.default },
 	  _react2.default.createElement(_reactRouter.Route, { name: "procedures", path: "procedures", handler: _Procedures2.default }),
-	  _react2.default.createElement(_reactRouter.DefaultRoute, { handler: _Insurance2.default })
+	  _react2.default.createElement(_reactRouter.IndexRoute, { handler: _Insurance2.default })
 	);
 
 	_reactRouter2.default.run(routes, function (Handler, state) {
