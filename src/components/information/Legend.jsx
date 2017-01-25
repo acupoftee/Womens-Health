@@ -1,7 +1,7 @@
 "use strict";
 
 import React, { Component } from "react";
-import d3 from "d3";
+import * as d3 from "d3";
 import $ from "jquery";
 
 let drawLegend = (minColor, maxColor) => {
@@ -66,6 +66,6 @@ export default class Legend extends Component {
 }
 
 Legend.propTypes = {
-  minColor: React.Proptypes.string.isRequired,
+  minColor: React.PropTypes.string.isRequired,
   maxColor: React.PropTypes.string.isRequired
 };

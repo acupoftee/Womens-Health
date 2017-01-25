@@ -26774,7 +26774,7 @@
 
 	var _d = __webpack_require__(239);
 
-	var _d2 = _interopRequireDefault(_d);
+	var d3 = _interopRequireWildcard(_d);
 
 	var _datamaps = __webpack_require__(240);
 
@@ -26787,6 +26787,8 @@
 	var _setup = __webpack_require__(244);
 
 	var _setup2 = _interopRequireDefault(_setup);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -26830,7 +26832,7 @@
 	      var _this2 = this;
 
 	      var $map = (0, _jquery2.default)("#map");
-	      var darkenedColor = _d2.default.rgb(this.props.colors.range(70)).darker();
+	      var darkenedColor = d3.rgb(this.props.colors.range(70)).darker();
 	      $map.empty();
 
 	      var data = {};
@@ -26883,7 +26885,7 @@
 	Map.propTypes = {
 	  fetched: _react2.default.PropTypes.bool.isRequired,
 	  data: _react2.default.PropTypes.array,
-	  activeState: _react2.default.Proptypes.string.isRequired,
+	  activeState: _react2.default.PropTypes.string.isRequired,
 	  activeInsurance: _react2.default.PropTypes.string.isRequired,
 	  colors: _react2.default.PropTypes.object.isRequired
 	};
@@ -37124,14 +37126,14 @@
 /* 239 */
 /***/ function(module, exports, __webpack_require__) {
 
-	// https://d3js.org Version 4.4.2. Copyright 2017 Mike Bostock.
+	// https://d3js.org Version 4.4.4. Copyright 2017 Mike Bostock.
 	(function (global, factory) {
 		 true ? factory(exports) :
 		typeof define === 'function' && define.amd ? define(['exports'], factory) :
 		(factory((global.d3 = global.d3 || {})));
 	}(this, (function (exports) { 'use strict';
 
-	var version = "4.4.2";
+	var version = "4.4.4";
 
 	var ascending = function(a, b) {
 	  return a < b ? -1 : a > b ? 1 : a >= b ? 0 : NaN;
@@ -40085,7 +40087,7 @@
 	    if (time < Infinity) timeout = setTimeout(wake, delay);
 	    if (interval) interval = clearInterval(interval);
 	  } else {
-	    if (!interval) interval = setInterval(poke, pokeDelay);
+	    if (!interval) clockLast = clockNow, interval = setInterval(poke, pokeDelay);
 	    frame = 1, setFrame(wake);
 	  }
 	}
@@ -76675,25 +76677,25 @@
 
 	var _d = __webpack_require__(239);
 
-	var _d2 = _interopRequireDefault(_d);
+	var d3 = _interopRequireWildcard(_d);
 
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	var colors = {
 	  turquoise: {
-	    range: _d2.default.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#4EB1BA"]),
+	    range: d3.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#4EB1BA"]),
 	    defaultFill: "rgb(204, 204, 204)"
 	  },
 	  blue: {
-	    range: _d2.default.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#3F5DAE"]),
+	    range: d3.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#3F5DAE"]),
 	    defaultFill: "rgb(204, 204, 204)"
 	  },
 	  green: {
-	    range: _d2.default.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#17B72B"]),
+	    range: d3.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#17B72B"]),
 	    defaultFill: "rgb(204, 204, 204)"
 	  },
 	  purple: {
-	    range: _d2.default.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#611E9F"]),
+	    range: d3.scaleLinear().domain([0, 70]).range(["#FFFFFF", "#611E9F"]),
 	    defaultFill: "rgb(204, 204, 204)"
 	  },
 	  mapping: {
@@ -77203,6 +77205,12 @@
 	var _Actions = __webpack_require__(252);
 
 	var _Actions2 = _interopRequireDefault(_Actions);
+
+	var _d = __webpack_require__(239);
+
+	var d3 = _interopRequireWildcard(_d);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79598,11 +79606,13 @@
 
 	var _d = __webpack_require__(239);
 
-	var _d2 = _interopRequireDefault(_d);
+	var d3 = _interopRequireWildcard(_d);
 
 	var _jquery = __webpack_require__(238);
 
 	var _jquery2 = _interopRequireDefault(_jquery);
+
+	function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -79615,8 +79625,8 @@
 	var drawLegend = function drawLegend(minColor, maxColor) {
 	  (0, _jquery2.default)(".legend").empty();
 	  var h = 50;
-	  var key = _d2.default.select(".legend").append("svg").attr("id", "key").attr("width", "100%").attr("height", h);
-	  var w = parseInt(_d2.default.select(".legend").style("width"), 10);
+	  var key = d3.select(".legend").append("svg").attr("id", "key").attr("width", "100%").attr("height", h);
+	  var w = parseInt(d3.select(".legend").style("width"), 10);
 
 	  var legend = key.append("defs").append("svg:linearGradient").attr("id", "gradient").attr("x1", "0%").attr("y1", "100%").attr("x2", "100%").attr("spreadMethod", "pad");
 
@@ -79626,9 +79636,9 @@
 
 	  key.append("svg:rect").attr("width", w - 20).attr("height", 20).style("fill", "url(#gradient)").attr("transform", "translate(10, 0)");
 
-	  var x = _d2.default.scaleLinear().range([0, w - 20]).domain([0, 70]);
+	  var x = d3.scaleLinear().range([0, w - 20]).domain([0, 70]);
 
-	  var xAxis = _d2.default.axisBottom(x).ticks(7);
+	  var xAxis = d3.axisBottom(x).ticks(7);
 
 	  key.append("g").attr("class", "xAxis").attr("transform", "translate(10, 20)").call(xAxis);
 	};
@@ -79666,7 +79676,7 @@
 
 
 	Legend.propTypes = {
-	  minColor: _react2.default.Proptypes.string.isRequired,
+	  minColor: _react2.default.PropTypes.string.isRequired,
 	  maxColor: _react2.default.PropTypes.string.isRequired
 	};
 

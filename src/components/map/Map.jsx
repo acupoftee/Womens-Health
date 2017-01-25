@@ -3,7 +3,7 @@
 import "../../sass/map.sass";
 import React, { Component } from "react";
 import $ from "jquery";
-import d3 from "d3";
+import * as d3 from "d3";
 import Datamap from "datamaps";
 import categories from "../../data/categories.json";
 import Dispatcher from "../../setup.js";
@@ -79,7 +79,7 @@ export default class Map extends Component {
 Map.propTypes = {
   fetched: React.PropTypes.bool.isRequired,
   data: React.PropTypes.array,
-  activeState: React.Proptypes.string.isRequired,
+  activeState: React.PropTypes.string.isRequired,
   activeInsurance: React.PropTypes.string.isRequired,
   colors: React.PropTypes.object.isRequired
 };
