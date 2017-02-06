@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bethydiakabananas/womens-health-map.git"
+    "url": "git+https://github.com/bethydiakabananas/Womens-Health.git"
   },
   "author": "Bethy Diakabana",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bethydiakabananas/womens-health-map/issues"
+    "url": "https://github.com/bethydiakabananas/Womens-Health/issues"
   },
-  "homepage": "https://github.com/bethydiakabananas/womens-health-map#readme",
+  "homepage": "https://github.com/bethydiakabananasWomens-Health#readme",
   "devDependencies": {
     "autoprefixer-loader": "^3.1.0",
     "css-loader": "^0.18.0",
