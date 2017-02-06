@@ -1,2 +1,2 @@
-# womens-health-map
-Map of women's healthcare services covered by insurance
+# Womens-Health
+Map of women's health insurance coverage in the US
