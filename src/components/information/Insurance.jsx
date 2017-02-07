@@ -60,7 +60,7 @@ let getChartConfig = (data, state, insurance) => {
       }
     },
     title: {
-      text: `Health insurance coverage of women aged 19–64 in <b>${stateNames[state]}</b>`,
+      text: `Health insurance coverage of women aged 19–64 in </br><b>${stateNames[state]}</b>`,
       align: "left",
       useHtml: true,
       style: {

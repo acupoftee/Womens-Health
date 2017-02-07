@@ -1,6 +1,7 @@
 "use strict";
 
 import "../../styles/map.sass";
+import Legend from "../information/Legend.jsx"
 import React, { Component } from "react";
 import $ from "jquery";
 import d3 from "d3";

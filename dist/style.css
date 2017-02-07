@@ -63,8 +63,8 @@ main {
         flex: 1 0 0;
     -ms-flex-flow: column nowrap;
         flex-flow: column nowrap;
-    -ms-flex-align: start;
-        align-items: flex-start;
+    -ms-flex-align: flex-stretch;
+        align-items: flex-stretch;
     padding: 10px;
     box-sizing: border-box;
     color: #222930;
@@ -74,6 +74,9 @@ main {
       margin: 10px 0 0 0;
       -ms-flex: 0;
           flex: 0; }
+      main .info .insurance-selector .tick,
+      main .info .legend .tick {
+        cursor: pointer; }
       main .info .insurance-selector.underline,
       main .info .legend.underline {
         padding-bottom: 10px;
