@@ -4,7 +4,6 @@ import React, { Component } from "react";
 import d3 from "d3";
 import $ from "jquery";
 
-// function clickMe(d){alert(d)}
 let drawLegend = (minimumColor, maximumColor) => {
   $(".legend").empty();
   let h = 50;
@@ -56,9 +55,6 @@ let drawLegend = (minimumColor, maximumColor) => {
       .attr("transform", "translate(10,20)")
       .call(xAxis);
 
-      // d3.select(".xAxis")
-      //   .selectAll(".tick")
-      //   .on("click",clickMe);
 };
 
 export default class Legend extends Component {
